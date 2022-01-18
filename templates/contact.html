@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+    <hr>
+    <h1>Связаться с Киберзаучкой</h1>
+    <form action="/sent" method="post">
+        <p>Фамилия:</p>
+        <p><input type="text" name="user_surname" placeholder="Фамилия" value=""></p>
+        
+        <p>Имя:</p>
+        <p><input type="text" name="user_name" placeholder="Имя" value=""></p>
+        
+        <p>Email:</p>
+        <p><input type="text" name="email" placeholder="Email" value=""></p>
+
+        <p>Тема сообщения:</p>
+        <select name="topic_message">
+            <option value="1">Вопрос</option>
+            <option value="2">Совет</option>
+            <option value="3">Кляуза</option>
+          </select>
+
+        <p>Сообщение:</p>
+        <textarea name="message" cols="50" rows="6"></textarea>
+        
+        <p><input type="checkbox">Получить ответ по email</p>
+
+        <p><input class="btn btn-primary" type="submit" value="Отправить сообщение"> 
+            
+{% endblock container %}

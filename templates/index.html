@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+        <hr>
+        <h1>{{ header.text }}</h1>
+        <table class="table">
+            <thead>
+                <tr class="table-info">
+                    <td>№ п/п</td>
+                    <td>Дата</td>
+                    <td> Прочитанных страниц книги (шт) </td>
+                    <td> Потраченное на это время </td>
+                    <td> Обнаружил спецсимвол </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class = "table-primary">
+                    <td>| 01 |</td>
+                    <td>25/11/2021</td>
+                    <td>107</td>
+                    <td>1 час 32 минуты</td>
+                    <td>←</td>
+                </tr>
+
+                <tr class = "table-success">
+                    <td>| 02 |</td>
+                    <td>26/11/2021</td>
+                    <td>345</td>
+                    <td>3 часа 12 минут</td>
+                    <td>Σ</td>
+                </tr>
+
+                <tr class = "table-primary">
+                    <td>| 03 |</td>
+                    <td>27/11/2021</td>
+                    <td>92</td>
+                    <td>1 час 30 минут</td>
+                    <td>Ψ</td>
+                </tr>
+
+                <tr class = "table-success">
+                    <td>| 04 |</td>
+                    <td>28/11/2021</td>
+                    <td>20</td>
+                    <td>27 минут</td>
+                    <td>←</td>
+                </tr>
+
+                <tr class = "table-primary">
+                    <td>| 05 |</td>
+                    <td>29/11/2021</td>
+                    <td>5</td>
+                    <td>9 минут</td>
+                    <td>Σ</td>
+                </tr>
+
+                <tr class = "table-success">
+                    <td>| 06 |</td>
+                    <td>30/11/2021</td>
+                    <td>220</td>
+                    <td>3 часа 17 минут</td>
+                    <td>Ψ</td>
+                </tr>
+
+                <tr class = "table-primary">
+                    <td>| 07 |</td>
+                    <td>01/12/2021</td>
+                    <td>0</td>
+                    <td>Не читал</td>
+                    <td></td>
+                </tr>
+
+                <tr class = "table-success">
+                    <td>| 08 |</td>
+                    <td>02/12/2021</td>
+                    <td>44</td>
+                    <td>1 час</td>
+                    <td>Σ</td>
+                </tr>
+
+                <tr class = "table-primary">
+                    <td>| 09 |</td>
+                    <td>03/12/2021</td>
+                    <td>222</td>
+                    <td>3 часа 17 минут</td>
+                    <td>Ψ</td>
+                </tr>
+
+                <tr class = "table-success">
+                    <td>| 10 |</td>
+                    <td>04/12/2021</td>
+                    <td>80</td>
+                    <td>1 час 21 минуты</td>
+                    <td>←</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+{% endblock container %}
